@@ -1,0 +1,13 @@
+BEGIN
+kind=graphics_map
+id=gfx.terrain.plains
+logical_id=terrain.plains
+asset=placeholder://tiles/plains
+END
+
+BEGIN
+kind=graphics_map
+id=gfx.material.stone
+logical_id=mat.stone
+asset=placeholder://tiles/stone
+END
