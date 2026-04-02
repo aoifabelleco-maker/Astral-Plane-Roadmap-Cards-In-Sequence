@@ -1,0 +1,16 @@
+{
+  "report": "ui_smoke",
+  "status": "pass",
+  "visible_shell_shown": true,
+  "enter_new_game_works": true,
+  "wasd_movement_works": true,
+  "camera_four_way_rotation_works": true,
+  "left_click_inspect_works": true,
+  "right_click_interact_works": true,
+  "esc_return_works": true,
+  "panel_toggles_work": true,
+  "build_panel_usable": true,
+  "storage_query_usable": true,
+  "final_runtime_position": { "x": 0, "y": 0 },
+  "final_camera_facing": 3
+}

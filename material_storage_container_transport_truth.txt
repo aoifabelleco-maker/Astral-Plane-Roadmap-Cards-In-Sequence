@@ -1,0 +1,7 @@
+Material Storage/Container/Transport Truth Law v1
+
+- loose_solid: pile on ground, direct access, high contamination risk.
+- contained_liquid: jar/barrel state, leakage risk tracked separately.
+- stockpile_bulk: grouped storage zone for fast query and retrieval.
+- vault_reserved: intentionally withheld reserve state.
+- Runtime inspection must report storage state plainly without a full economy UI.
