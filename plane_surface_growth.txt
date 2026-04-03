@@ -1,0 +1,7 @@
+Plane Surface Growth Law v1
+
+- Same-material adjacency bias is preferred for placement.
+- Growth checks edge, up, and down placement lanes.
+- Captured foreign core increases growth capacity budget.
+- Home plane expansion updates owned-plane dimensions and capacity.
+- Assimilated blocks remain physically mineable for rearrangement.
