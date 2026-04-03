@@ -1,0 +1,22 @@
+Astral Plane Terrain Cell State Model v1
+
+Canonical terminology (frozen law):
+- cell: place truth (a coordinate slot in world space).
+- layer: z-index slice of cells.
+- block: structural denomination occupying one cell.
+- microblock: one of 27 internal block units.
+- measure: smallest economic matter unit (equal to one microblock).
+- pile: loose matter aggregation over one or more cells.
+- volume: total occupied 3D extent measured in cells.
+- contained_matter: matter held inside a container form.
+- refined_matter: transformed matter preserving measured quantity.
+- assimilated_matter: substrate identity retained under assimilation law.
+- reserved_matter: matter marked non-consumable for claimed flows.
+- tainted_matter: matter flagged unsafe/restricted for normal flows.
+
+Cell schema:
+- coord: (x,y,z)
+- occupied: true/false
+- state: full_block | loose_matter | assimilated_matter | contained_matter
+- measures: 0..27
+- temperature_c: baseline placeholder

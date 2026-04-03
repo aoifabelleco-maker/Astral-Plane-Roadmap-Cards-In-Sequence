@@ -1,0 +1,7 @@
+Astral Plane Primary Stats v1
+
+- STR (strength): lifting and carrying authority.
+- PER (perception): sight and information radius authority.
+- END (endurance): stamina pool and drain resistance.
+- AGI (agility): movement efficiency placeholder.
+- WIL (willpower): collapse resistance placeholder.

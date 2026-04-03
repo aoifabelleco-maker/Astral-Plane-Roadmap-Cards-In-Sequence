@@ -1,0 +1,6 @@
+Portal Rift Bootstrap Law v1
+
+- A portal rune can be activated from an owned plane.
+- Activation opens a temporary crack plane linked to the origin.
+- Entering the crack plane records origin and foreign coordinates.
+- If the crack closes while stranded, foreign-plane death is immediate.
