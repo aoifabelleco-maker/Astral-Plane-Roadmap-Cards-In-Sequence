@@ -1,6 +1,0 @@
-{
-  "report": "save_schema_change",
-  "status": "pass",
-  "schema_version": "1.0.0",
-  "change_note": "M-011 bootstrap schema introduced"
-}
