@@ -1,0 +1,9 @@
+LEGACY MEMORY FRAGMENTS (bootstrap)
+
+Fragments are sparse carry-over tokens for next-life bootstrap.
+Examples:
+- ore-vein-map
+- rift-clock-sense
+- ancestral-chant-snippet
+
+Fragments are not full skill transfer and are intentionally narrow in M-011.
