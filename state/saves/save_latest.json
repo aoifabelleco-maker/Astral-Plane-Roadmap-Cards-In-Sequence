@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "world_seed": 424242,
+  "home_plane": {
+    "owned_cells": 10,
+    "growth_capacity": 12
+  },
+  "ironman": {
+    "enabled": true,
+    "player_dead": true,
+    "death_count": 1
+  },
+  "reincarnation": {
+    "index": 2,
+    "memory_fragments": ["ore-vein-map", "rift-clock-sense", "ancestral-chant-snippet"],
+    "ancestral_land": "placeholder_claim_marked"
+  },
+  "portal_coordinates": [
+    { "plane_id": "home_plane", "x": 1, "y": 1 },
+    { "plane_id": "crack_plane_a", "x": -3, "y": 8 }
+  ]
+}

@@ -1,0 +1,6 @@
+Portal Timer Law v1
+
+- Each crack has a visible countdown timer in ticks.
+- Timer starts at activation and decrements each tick.
+- Returning before timer expiry is safe.
+- Timeout on foreign plane triggers hard failure.
