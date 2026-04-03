@@ -1,0 +1,6 @@
+# core definitions
+BEGIN
+kind=core
+id=core.bootstrap
+name=Bootstrap Core
+END
