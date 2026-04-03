@@ -1,0 +1,97 @@
+{
+  "report": "truth",
+  "status": "pass",
+  "content_audit_checksum": "c96c766c8dea1938",
+  "loaded_modules": [
+    "content/init/ap_core.ap",
+    "content/init/ap_lua.ap",
+    "content/vanilla/ap_graphics.ap",
+    "content/vanilla/ap_materials.ap",
+    "content/vanilla/ap_planes.ap",
+    "content/vanilla/ap_stats.ap",
+    "content/vanilla/ap_terrain.ap"
+  ],
+  "owned_plane_summary": {
+    "owned_plane_cells_before": 9,
+    "owned_plane_cells_after": 11,
+    "growth_capacity_before": 100,
+    "growth_capacity_after": 130,
+    "captured_core_count": 1
+  },
+  "assimilation_summary": {
+    "auto_assimilation_on_return": true,
+    "home_plane_expanded": true,
+    "core_captured": true,
+    "assimilated_blocks_reminable": true,
+    "reserved_measures": 8,
+    "feed_eligible_measures": 22,
+    "in_process_feed_measures": 12,
+    "assimilated_measures": 10
+  },
+  "building_storage_heat_summary": {
+    "build_panel_usable": true,
+    "room_closed": true,
+    "bed_placed": true,
+    "stockpile_active": true,
+    "vault_placeholder_active": true,
+    "heat_source_active": true,
+    "enclosure_check_passed": true,
+    "local_temp_before_c": -2,
+    "local_temp_after_c": 4,
+    "ice_melted_to_water": true,
+    "storage_loose_pile_state": true,
+    "storage_contained_state": true,
+    "storage_stockpile_state": true,
+    "storage_reserved_state": true,
+    "storage_query_usable": true,
+    "transport_truth_distinct": true
+  },
+  "ecology_event_summary": {
+    "comet_event_occurred": true,
+    "meteor_event_occurred": true,
+    "seed_drop_occurred": true,
+    "void_slime_arrived": true,
+    "void_slime_consumed_matter": true,
+    "same_rank_slime_merged": true,
+    "matter_consumed": 12,
+    "matter_recovered": 14,
+    "extra_reward": 3,
+    "slime_defeat_recovered_matter": true,
+    "plant_loop_seed_to_harvest_worked": true
+  },
+  "ui_anchor_summary": {
+    "visible_shell_shown": true,
+    "enter_new_game_works": true,
+    "wasd_movement_works": true,
+    "camera_four_way_rotation_works": true,
+    "inspect_interact_works": true,
+    "esc_return_works": true,
+    "panel_toggles_work": true
+  },
+  "save_reincarnation_summary": {
+    "schema_version": "1.0.0",
+    "save_write_succeeded": true,
+    "save_load_succeeded": true,
+    "no_drift": true,
+    "world_seed_persisted": 424242,
+    "home_plane_owned_cells": 10,
+    "death_did_not_rewind_world": true,
+    "reincarnation_index": 2,
+    "memory_fragment_count": 3,
+    "ancestral_land_state": "placeholder_claim_marked",
+    "schema_change_reported": true
+  },
+  "character_panel": {
+    "template": "human_mortal",
+    "primary": {
+      "str": 7,
+      "per": 8,
+      "end": 6
+    },
+    "derived": {
+      "carry_capacity_kg": 55,
+      "vision_radius_tiles": 7,
+      "stamina_max": 124
+    }
+  }
+}

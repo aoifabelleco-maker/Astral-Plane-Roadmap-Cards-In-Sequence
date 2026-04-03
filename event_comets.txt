@@ -1,0 +1,4 @@
+COMET EVENT LAW (M-010)
+
+Comet event periodically traverses owned or adjacent space.
+Comet event can drop seeds and uncommon resource shards.

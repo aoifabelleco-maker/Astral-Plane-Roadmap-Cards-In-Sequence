@@ -1,0 +1,5 @@
+LEGACY DEATH RULES (bootstrap)
+
+1) Ironman death is final for the current body.
+2) Death does not rewind world seed, home-plane growth, or captured coordinates.
+3) Save must persist death count and dead flag before reincarnation bootstrap is offered.

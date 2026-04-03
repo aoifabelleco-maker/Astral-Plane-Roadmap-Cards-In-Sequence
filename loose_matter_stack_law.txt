@@ -1,0 +1,19 @@
+Loose Matter Stack Split/Merge Truth Law v1
+
+- Mining outputs loose stacks with explicit truth fields, not anonymous blobs.
+- Stack quantity compresses measures only; it does not erase ownership/legality/risk truth.
+
+Hard merge blockers:
+- legality state mismatch
+- ownership/claim mismatch
+- contamination family mismatch
+- curse/omen mismatch
+- freshness band mismatch
+
+Split law:
+- child stack inherits legality, ownership, contamination family, omen, freshness, and warning context.
+
+Legal merge law:
+- measures are added.
+- warning chips are union-preserved by strongest severity.
+- inspect text must retain actionable warning context.

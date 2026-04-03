@@ -1,0 +1,5 @@
+BASIC FOOD PLANT LOOP (M-010)
+
+seed -> sprout -> mature -> harvest
+
+At least one baseline food loop must complete from seed to harvest.
