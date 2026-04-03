@@ -1,0 +1,5 @@
+Portal Coordinate Recording Law v1
+
+- Record origin plane ID and origin coordinates at activation.
+- Record crack plane ID and foreign entry coordinates at crossing.
+- Return path must verify recorded origin before transfer.

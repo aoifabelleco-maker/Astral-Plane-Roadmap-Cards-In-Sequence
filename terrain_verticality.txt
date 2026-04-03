@@ -1,0 +1,6 @@
+Astral Plane Terrain Verticality Law v1
+
+- Z-level framework is explicit.
+- Start plane supports z = -1, 0, +1.
+- Layer 0 is visible start layer.
+- Layers above/below are structural support lanes.

@@ -1,0 +1,10 @@
+Astral Plane Terrain Occupation Rules v1
+
+- occupied = true when measures > 0.
+- occupied = false when measures = 0.
+- full_block requires occupied=true and measures=27.
+- loose_matter requires occupied=true and measures in [1..26].
+- assimilated_matter requires occupied=true and measures in [1..27].
+- contained_matter requires occupied=true and measures in [1..27].
+- reserved_matter / tainted_matter are policy tags layered over the base form.
+- temperature_c baseline placeholder defaults to 12.0 C.
