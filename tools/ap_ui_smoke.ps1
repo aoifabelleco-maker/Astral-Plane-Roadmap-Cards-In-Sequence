@@ -57,6 +57,19 @@ if (-not $ui.key_spine_declared) {
   throw 'Key spine declaration missing.'
 }
 
+if (-not $ui.top_left_body_growth_visible) {
+  throw 'Top-left body/growth anchor missing.'
+}
+if (-not $ui.bottom_left_life_anchor_visible) {
+  throw 'Bottom-left life anchor missing.'
+}
+if (-not $ui.bottom_right_spirit_anchor_visible) {
+  throw 'Bottom-right spirit anchor missing.'
+}
+if (-not $ui.core_truth_fields_visible) {
+  throw 'Core truth fields visibility missing.'
+}
+
 if (-not $ui.action_belt_visible) {
   throw 'Action belt visibility proof missing.'
 }

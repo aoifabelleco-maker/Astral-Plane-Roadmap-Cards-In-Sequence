@@ -35,6 +35,19 @@ if (-not $truth.building_storage_heat_summary.ice_melted_to_water) {
   throw 'Heat/melt proof missing.'
 }
 
+
+if (-not $truth.ecology_event_summary) {
+  throw 'Ecology event summary missing.'
+}
+if (-not $truth.ecology_event_summary.comet_event_occurred -or -not $truth.ecology_event_summary.meteor_event_occurred -or -not $truth.ecology_event_summary.seed_drop_occurred) {
+  throw 'Meteor/comet seed event proof missing.'
+}
+if (-not $truth.ecology_event_summary.void_slime_consumed_matter -or -not $truth.ecology_event_summary.same_rank_slime_merged) {
+  throw 'Void slime behavior proof missing.'
+}
+if (-not $truth.ecology_event_summary.slime_defeat_recovered_matter -or -not $truth.ecology_event_summary.plant_loop_seed_to_harvest_worked) {
+  throw 'Matter recovery or plant loop proof missing.'
+}
 if (-not $truth.ui_anchor_summary) {
   throw 'UI anchor summary missing.'
 }

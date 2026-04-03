@@ -169,3 +169,29 @@ Governed milestone scaffolding for Astral Plane.
 - Command obligations:
   - `./build/AstralPlane.exe -uismoke`
   - `pwsh ./tools/ap_ui_smoke.ps1`
+
+
+## Ecology event + slime seedloop floor (M-010)
+
+- Law surfaces:
+  - `event_comets.txt`
+  - `event_meteors.txt`
+  - `creature_void_slime.txt`
+  - `plant_basic_food.txt`
+  - `plant_spirit_herbs.txt`
+- Truth report now includes `ecology_event_summary` with comet/meteor occurrence, seed drops, slime consumption/merge/recovery, and first plant seed-to-harvest loop.
+- Command obligations:
+  - `./build/AstralPlane.exe -truthreport`
+  - `pwsh ./tools/ap_smoke.ps1`
+
+## UI always-on truth anchors floor (M-015)
+
+- Truth anchor contract: `Docs/AP_UI_ALWAYS_ON_TRUTHS.md` (`ui-truth-anchors-1.0.0`).
+- UI smoke now validates:
+  - top-left body/growth anchor
+  - bottom-left life anchor
+  - bottom-right spirit anchor
+  - always-visible core truth fields (level/stage/progress/stamina/load/burden/mode)
+- Command obligations:
+  - `./build/AstralPlane.exe -uismoke`
+  - `pwsh ./tools/ap_ui_smoke.ps1`

@@ -1,0 +1,5 @@
+VOID SLIME LAW (M-010)
+
+Void slimes consume plane matter instead of acting as plain hostiles.
+Same-rank slimes may merge into stronger single entities.
+Defeating slimes returns consumed matter plus extra ecological reward.

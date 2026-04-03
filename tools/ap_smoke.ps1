@@ -19,7 +19,7 @@ $smoke = Get-Content -LiteralPath $smokePath -Raw | ConvertFrom-Json
 if ($smoke.status -ne 'pass') {
   throw 'Smoke report status is not pass.'
 }
-if ($smoke.note -ne 'move + mine + carry + fight + portal + assimilation + build/storage/heat + save/reincarnation valid') {
+if ($smoke.note -ne 'move + mine + carry + fight + portal + assimilation + build/storage/heat + save/reincarnation + ecology valid') {
   throw 'Smoke report note mismatch for stage-7 baseline.'
 }
 
@@ -34,6 +34,13 @@ if (-not $truth.building_storage_heat_summary.room_closed -or -not $truth.buildi
 }
 
 
+
+if (-not $truth.ecology_event_summary) {
+  throw 'Ecology event summary missing in truth report.'
+}
+if (-not $truth.ecology_event_summary.comet_event_occurred -or -not $truth.ecology_event_summary.void_slime_consumed_matter -or -not $truth.ecology_event_summary.plant_loop_seed_to_harvest_worked) {
+  throw 'Ecology event proof missing in truth report.'
+}
 if (-not $truth.ui_anchor_summary) {
   throw 'UI anchor summary missing in truth report.'
 }

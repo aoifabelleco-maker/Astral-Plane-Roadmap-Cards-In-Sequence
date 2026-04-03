@@ -4,6 +4,7 @@
 #include "content/content_loader.hpp"
 #include "game/assimilation.hpp"
 #include "game/building_storage_heat.hpp"
+#include "game/ecology_loop.hpp"
 #include "game/harsh_verbs.hpp"
 #include "game/portal_rift.hpp"
 #include "ui/ui_smoke.hpp"
@@ -35,6 +36,7 @@ bool WriteTruthReport() {
   const auto portal = ap::RunPortalRiftScenario();
   const auto assimilation = ap::RunAssimilationScenario();
   const auto building = ap::RunBuildingStorageHeatScenario();
+  const auto ecology = ap::RunEcologyLoopScenario();
   const auto ui = ap::RunUiInputCameraScenario();
   const auto save = ap::RunSaveReincarnationScenario("state/saves/save_latest.json",
                                                      "reports/audit/save_schema_change_latest.json");
@@ -49,7 +51,10 @@ bool WriteTruthReport() {
 
   if (!load.ok || !world.summary.coreExists || !harsh.fightWorked || !portal.enteredCrackPlane ||
       !assimilation.homePlaneExpanded || !building.roomClosed || !building.storageQueryUsable ||
-      !building.iceMeltedToWater || !building.buildPanelUsable || !ui.visibleShellShown ||
+      !building.iceMeltedToWater || !building.buildPanelUsable || !ecology.cometEventOccurred ||
+      !ecology.meteorEventOccurred || !ecology.seedDropOccurred || !ecology.slimeArrived ||
+      !ecology.slimeConsumedMatter || !ecology.sameRankSlimeMerged ||
+      !ecology.slimeDefeatRecoveredMatter || !ecology.plantLoopSeedToHarvestWorked || !ui.visibleShellShown ||
       !ui.enterFromMenuWorked || !ui.wasdMovementWorked || !ui.cameraFourWayWorked ||
       !ui.leftClickInspectWorked || !ui.rightClickInteractWorked || !ui.escReturnWorked ||
       !ui.panelToggleWorked || !save.noDrift || !save.deathDidNotRewindWorld ||
@@ -103,6 +108,19 @@ bool WriteTruthReport() {
       << "    \"storage_reserved_state\": " << (building.storageReservedState ? "true" : "false") << ",\n"
       << "    \"storage_query_usable\": " << (building.storageQueryUsable ? "true" : "false") << ",\n"
       << "    \"transport_truth_distinct\": " << (building.transportTruthDistinct ? "true" : "false") << "\n"
+      << "  },\n"
+      << "  \"ecology_event_summary\": {\n"
+      << "    \"comet_event_occurred\": " << (ecology.cometEventOccurred ? "true" : "false") << ",\n"
+      << "    \"meteor_event_occurred\": " << (ecology.meteorEventOccurred ? "true" : "false") << ",\n"
+      << "    \"seed_drop_occurred\": " << (ecology.seedDropOccurred ? "true" : "false") << ",\n"
+      << "    \"void_slime_arrived\": " << (ecology.slimeArrived ? "true" : "false") << ",\n"
+      << "    \"void_slime_consumed_matter\": " << (ecology.slimeConsumedMatter ? "true" : "false") << ",\n"
+      << "    \"same_rank_slime_merged\": " << (ecology.sameRankSlimeMerged ? "true" : "false") << ",\n"
+      << "    \"matter_consumed\": " << ecology.matterConsumed << ",\n"
+      << "    \"matter_recovered\": " << ecology.matterRecovered << ",\n"
+      << "    \"extra_reward\": " << ecology.extraReward << ",\n"
+      << "    \"slime_defeat_recovered_matter\": " << (ecology.slimeDefeatRecoveredMatter ? "true" : "false") << ",\n"
+      << "    \"plant_loop_seed_to_harvest_worked\": " << (ecology.plantLoopSeedToHarvestWorked ? "true" : "false") << "\n"
       << "  },\n"
       << "  \"ui_anchor_summary\": {\n"
       << "    \"visible_shell_shown\": " << (ui.visibleShellShown ? "true" : "false") << ",\n"
@@ -189,16 +207,18 @@ int RunSingleCommand(const std::string& arg) {
 
   if (arg == "-smoke") {
     const auto building = ap::RunBuildingStorageHeatScenario();
-  const auto ui = ap::RunUiInputCameraScenario();
-  const auto save = ap::RunSaveReincarnationScenario("state/saves/save_latest.json",
-                                                     "reports/audit/save_schema_change_latest.json");
+    const auto save = ap::RunSaveReincarnationScenario("state/saves/save_latest.json",
+                                                       "reports/audit/save_schema_change_latest.json");
     const auto harsh = ap::RunHarshVerbScenario();
+    const auto ecology = ap::RunEcologyLoopScenario();
     if (!building.roomClosed || !building.storageQueryUsable || !building.iceMeltedToWater || !building.buildPanelUsable ||
-        !harsh.fightWorked || !save.noDrift || !save.reincarnationBootstrapReady) {
+        !harsh.fightWorked || !save.noDrift || !save.reincarnationBootstrapReady ||
+        !ecology.cometEventOccurred || !ecology.meteorEventOccurred || !ecology.seedDropOccurred ||
+        !ecology.slimeDefeatRecoveredMatter || !ecology.plantLoopSeedToHarvestWorked) {
       return 1;
     }
     return WriteJsonReport("reports/smoke/smoke_latest.json", "smoke",
-                           "move + mine + carry + fight + portal + assimilation + build/storage/heat + save/reincarnation valid")
+                           "move + mine + carry + fight + portal + assimilation + build/storage/heat + save/reincarnation + ecology valid")
                ? 0
                : 1;
   }

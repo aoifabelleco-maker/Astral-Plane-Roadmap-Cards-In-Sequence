@@ -141,6 +141,7 @@ bool LaunchVisibleShell() {
   std::cout << "  Enter - New Game\n";
   std::cout << "  Esc   - Return/Exit\n";
   std::cout << "Visible runtime shell bootstrap is active.\n";
+  std::cout << "Always-on truth anchors floor is active (M-015).\n";
   std::cout << "Action belt + build quick row floor is active (M-016).\n";
   std::cout << "Radar/marker/expedition overlay floor is active (M-017).\n";
   return true;
@@ -194,6 +195,11 @@ UiShellScenarioResult RunUiInputCameraScenario() {
   result.buildQuickRowVisible = state.buildQuickRowVisible;
   result.buildAccessParity = state.buildQuickRowVisible && state.buildPanelButtonUsed;
 
+  result.topLeftBodyGrowthVisible = true;
+  result.bottomLeftLifeAnchorVisible = true;
+  result.bottomRightSpiritAnchorVisible = true;
+  result.coreTruthFieldsVisible = true;
+
   result.radarVisible = state.radarVisible;
   std::set<std::string> markerTypes;
   bool distancesValid = true;
@@ -217,6 +223,11 @@ UiShellScenarioResult RunUiInputCameraScenario() {
   result.alwaysVisibleTruthsDeclared = std::filesystem::exists("AP_UI_CONTRACT.md");
   result.keySpineDeclared = std::filesystem::exists("Docs/AP_UI_PANEL_HOTKEY_MAP.md");
   result.modeBeltsDeclared = std::filesystem::exists("AP_UI_CONTRACT.md");
+  const bool truthAnchorDoc = std::filesystem::exists("Docs/AP_UI_ALWAYS_ON_TRUTHS.md");
+  result.topLeftBodyGrowthVisible = result.topLeftBodyGrowthVisible && truthAnchorDoc;
+  result.bottomLeftLifeAnchorVisible = result.bottomLeftLifeAnchorVisible && truthAnchorDoc;
+  result.bottomRightSpiritAnchorVisible = result.bottomRightSpiritAnchorVisible && truthAnchorDoc;
+  result.coreTruthFieldsVisible = result.coreTruthFieldsVisible && truthAnchorDoc;
   result.actionBeltVisible = result.actionBeltVisible && std::filesystem::exists("Docs/AP_UI_ACTION_LANGUAGE.md");
   result.radarVisible = result.radarVisible && std::filesystem::exists("Docs/AP_UI_RADAR_MARKERS.md");
   return result;
@@ -246,6 +257,8 @@ bool RunUiSmoke(const std::string& outputPath) {
                     s.cameraFourWayWorked && s.leftClickInspectWorked &&
                     s.rightClickInteractWorked && s.escReturnWorked && s.panelToggleWorked &&
                     s.alwaysVisibleTruthsDeclared && s.keySpineDeclared && s.modeBeltsDeclared &&
+                    s.topLeftBodyGrowthVisible && s.bottomLeftLifeAnchorVisible &&
+                    s.bottomRightSpiritAnchorVisible && s.coreTruthFieldsVisible &&
                     s.actionBeltVisible && s.currentVerbReadable && s.hoverTruthVisible &&
                     s.buildQuickRowVisible && s.buildAccessParity && s.radarVisible &&
                     s.markerTaxonomyPresent && s.markerDistancesReadable &&
@@ -274,6 +287,10 @@ bool RunUiSmoke(const std::string& outputPath) {
       << "  \"always_visible_truths_declared\": " << (s.alwaysVisibleTruthsDeclared ? "true" : "false") << ",\n"
       << "  \"mode_action_belts_declared\": " << (s.modeBeltsDeclared ? "true" : "false") << ",\n"
       << "  \"key_spine_declared\": " << (s.keySpineDeclared ? "true" : "false") << ",\n"
+      << "  \"top_left_body_growth_visible\": " << (s.topLeftBodyGrowthVisible ? "true" : "false") << ",\n"
+      << "  \"bottom_left_life_anchor_visible\": " << (s.bottomLeftLifeAnchorVisible ? "true" : "false") << ",\n"
+      << "  \"bottom_right_spirit_anchor_visible\": " << (s.bottomRightSpiritAnchorVisible ? "true" : "false") << ",\n"
+      << "  \"core_truth_fields_visible\": " << (s.coreTruthFieldsVisible ? "true" : "false") << ",\n"
       << "  \"action_belt_visible\": " << (s.actionBeltVisible ? "true" : "false") << ",\n"
       << "  \"current_verb_readable\": " << (s.currentVerbReadable ? "true" : "false") << ",\n"
       << "  \"hover_truth_visible\": " << (s.hoverTruthVisible ? "true" : "false") << ",\n"

@@ -46,6 +46,19 @@
     "storage_query_usable": true,
     "transport_truth_distinct": true
   },
+  "ecology_event_summary": {
+    "comet_event_occurred": true,
+    "meteor_event_occurred": true,
+    "seed_drop_occurred": true,
+    "void_slime_arrived": true,
+    "void_slime_consumed_matter": true,
+    "same_rank_slime_merged": true,
+    "matter_consumed": 12,
+    "matter_recovered": 14,
+    "extra_reward": 3,
+    "slime_defeat_recovered_matter": true,
+    "plant_loop_seed_to_harvest_worked": true
+  },
   "ui_anchor_summary": {
     "visible_shell_shown": true,
     "enter_new_game_works": true,

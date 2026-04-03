@@ -14,6 +14,7 @@ add_executable(AstralPlane
   src/game/portal_rift.cpp
   src/game/assimilation.cpp
   src/game/building_storage_heat.cpp
+  src/game/ecology_loop.cpp
   src/ui/ui_smoke.cpp
   src/world/start_plane.cpp
   src/world/terrain_model.cpp

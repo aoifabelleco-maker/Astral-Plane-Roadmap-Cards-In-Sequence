@@ -24,6 +24,10 @@ struct UiShellScenarioResult {
   bool hoverTruthVisible = false;
   bool buildQuickRowVisible = false;
   bool buildAccessParity = false;
+  bool topLeftBodyGrowthVisible = false;
+  bool bottomLeftLifeAnchorVisible = false;
+  bool bottomRightSpiritAnchorVisible = false;
+  bool coreTruthFieldsVisible = false;
   bool radarVisible = false;
   bool markerTaxonomyPresent = false;
   bool markerDistancesReadable = false;
