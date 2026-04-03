@@ -1,8 +1,0 @@
-{
-  "restore_anchor": "m013_ui_rebase_anchor",
-  "status": "frozen",
-  "contract_version": "ui-anchor-1.0.0",
-  "shell_baseline": "visible_menu_runtime_entry_floor",
-  "input_floor": ["WASD", "Q/E", "left_click_inspect", "right_click_interact", "Esc"],
-  "panel_toggles": ["inventory", "map"]
-}

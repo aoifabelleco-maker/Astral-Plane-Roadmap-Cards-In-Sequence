@@ -1,6 +1,0 @@
-{
-  "green_state_version": "1.9.0",
-  "status": "green",
-  "restore_point": "state/restore_points/restore_point_m009_latest.json",
-  "captured_by": "AstralPlane.exe -fullgate"
-}
