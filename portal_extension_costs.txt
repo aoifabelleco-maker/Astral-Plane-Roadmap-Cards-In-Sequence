@@ -1,0 +1,6 @@
+Portal Extension Cost Law v1
+
+- Crack lifetime may be extended by paying extension cost.
+- Baseline extension cost: 15 measures per +3 ticks.
+- Extension cost is consumed immediately on use.
+- Extension cannot be free.

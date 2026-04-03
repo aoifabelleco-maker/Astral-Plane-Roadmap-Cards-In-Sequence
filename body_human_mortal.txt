@@ -1,0 +1,17 @@
+Astral Plane Body Template Law v1
+
+Template: human_mortal
+- frame_mass_kg: 70
+- baseline_stamina: 100
+- collapse_threshold_stamina: 5
+- recovery_band: 15
+
+Template: human_cultivator_placeholder
+- frame_mass_kg: 72
+- baseline_stamina: 120
+- collapse_threshold_stamina: 8
+- recovery_band: 20
+
+Law:
+- Body template supplies baseline physical constraints.
+- Primary stats modify derived action outcomes.

@@ -1,0 +1,7 @@
+Assimilated/Reserved/Feed State Truth Law v1
+
+- Assimilated matter is not ordinary loose trade matter.
+- Reserved matter remains intentionally withheld for planned use (build, portal, ritual, crisis stock).
+- Feed-eligible matter may enter in-process feed.
+- In-process feed may produce assimilated growth or rejected/diverted residue.
+- Truth and assimilation summaries must report these states separately.
