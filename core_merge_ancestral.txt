@@ -1,0 +1,4 @@
+Core Merge Ancestral Placeholder v1
+
+- Reserved placeholder for future ancestral core merge law.
+- No rune-board implementation in this stage.

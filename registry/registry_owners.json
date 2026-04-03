@@ -1,0 +1,25 @@
+{
+  "owners_registry_version": "1.0.0",
+  "entries": [
+    {
+      "path": "Docs/AP_PROTOCOL.md",
+      "owner": "governance",
+      "critical": true
+    },
+    {
+      "path": "registry/ap_manifest.json",
+      "owner": "governance",
+      "critical": true
+    },
+    {
+      "path": "state/green_state/green_state.json",
+      "owner": "operations",
+      "critical": true
+    },
+    {
+      "path": "tools",
+      "owner": "operations",
+      "critical": true
+    }
+  ]
+}

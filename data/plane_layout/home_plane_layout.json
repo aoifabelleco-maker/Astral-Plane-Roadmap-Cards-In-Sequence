@@ -1,0 +1,7 @@
+{
+  "layout_id": "home_plane_v1",
+  "size": { "width": 3, "height": 3 },
+  "layers": [-1, 0, 1],
+  "visible_start_layer": 0,
+  "core": { "x": 0, "y": 0, "layer": 0 }
+}
