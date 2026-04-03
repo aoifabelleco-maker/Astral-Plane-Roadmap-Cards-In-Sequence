@@ -1,0 +1,16 @@
+Astral Plane Terrain Block/Form Law v1
+
+Denomination law:
+- 1 block = 27 measures.
+- measure equality does not guarantee use equality.
+
+Form distinctions (must not be conflated):
+- walkable_floor: locomotion-supporting traversable form.
+- structural_block: solid support block form.
+- loose_matter: non-structural dispersed matter form.
+- contained_matter: matter in a container boundary.
+
+State notes:
+- A full structural block occupies exactly one cell and has 27 measures.
+- Decomposed matter may spread as loose form while conserving total measures.
+- Assimilated/refined/reserved/tainted flags modify policy, not denomination.
