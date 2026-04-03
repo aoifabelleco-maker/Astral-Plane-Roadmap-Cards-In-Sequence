@@ -107,6 +107,18 @@ Governed milestone scaffolding for Astral Plane.
 - Truth report now includes `building_storage_heat_summary` with enclosure, storage state/query, and local heat/ice-melt proof fields.
 - New UI obligation script: `pwsh ./tools/ap_ui_smoke.ps1`.
 
+## Ecology event + slime seedloop floor (M-010)
+
+- Law surfaces:
+  - `event_comets.txt`
+  - `event_meteors.txt`
+  - `creature_void_slime.txt`
+  - `plant_basic_food.txt`
+  - `plant_spirit_herbs.txt`
+- Truth report now includes `ecology_event_summary` with comet/meteor occurrence, seed drops, slime consumption/merge/recovery, and first plant seed-to-harvest loop.
+- Command obligations:
+  - `./build/AstralPlane.exe -truthreport`
+  - `pwsh ./tools/ap_smoke.ps1`
 
 ## Save/load + death continuity bootstrap (M-011)
 
@@ -142,6 +154,17 @@ Governed milestone scaffolding for Astral Plane.
 - Panel/hotkey map: `Docs/AP_UI_PANEL_HOTKEY_MAP.md` with frozen C/I/P/B/R/M/Esc spine.
 - UI smoke now enforces contract declarations (always-visible truths, mode action belts, key spine) in addition to runtime floor checks.
 
+## UI always-on truth anchors floor (M-015)
+
+- Truth anchor contract: `Docs/AP_UI_ALWAYS_ON_TRUTHS.md` (`ui-truth-anchors-1.0.0`).
+- UI smoke now validates:
+  - top-left body/growth anchor
+  - bottom-left life anchor
+  - bottom-right spirit anchor
+  - always-visible core truth fields (level/stage/progress/stamina/load/burden/mode)
+- Command obligations:
+  - `./build/AstralPlane.exe -uismoke`
+  - `pwsh ./tools/ap_ui_smoke.ps1`
 
 ## UI action belt + build quick row floor (M-016)
 
@@ -171,27 +194,6 @@ Governed milestone scaffolding for Astral Plane.
   - `pwsh ./tools/ap_ui_smoke.ps1`
 
 
-## Ecology event + slime seedloop floor (M-010)
 
-- Law surfaces:
-  - `event_comets.txt`
-  - `event_meteors.txt`
-  - `creature_void_slime.txt`
-  - `plant_basic_food.txt`
-  - `plant_spirit_herbs.txt`
-- Truth report now includes `ecology_event_summary` with comet/meteor occurrence, seed drops, slime consumption/merge/recovery, and first plant seed-to-harvest loop.
-- Command obligations:
-  - `./build/AstralPlane.exe -truthreport`
-  - `pwsh ./tools/ap_smoke.ps1`
 
-## UI always-on truth anchors floor (M-015)
 
-- Truth anchor contract: `Docs/AP_UI_ALWAYS_ON_TRUTHS.md` (`ui-truth-anchors-1.0.0`).
-- UI smoke now validates:
-  - top-left body/growth anchor
-  - bottom-left life anchor
-  - bottom-right spirit anchor
-  - always-visible core truth fields (level/stage/progress/stamina/load/burden/mode)
-- Command obligations:
-  - `./build/AstralPlane.exe -uismoke`
-  - `pwsh ./tools/ap_ui_smoke.ps1`
