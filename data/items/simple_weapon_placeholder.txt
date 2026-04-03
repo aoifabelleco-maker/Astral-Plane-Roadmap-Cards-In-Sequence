@@ -1,0 +1,5 @@
+Simple weapon placeholder v1
+
+- rusted_short_blade
+  damage: 7
+  type: melee

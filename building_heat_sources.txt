@@ -1,0 +1,6 @@
+Building Heat Source Law v1
+
+- Local heat source can increase enclosed room temperature.
+- Enclosure checks gate effective heating.
+- Early ice can transition to water once local temperature crosses melt threshold.
+- Advanced thermodynamics remain out of scope.

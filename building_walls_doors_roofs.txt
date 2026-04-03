@@ -1,0 +1,5 @@
+Building Structure Law v1
+
+- First structures include floor, wall, door, and roof indicators.
+- A closed room requires perimeter walls, at least one door, and roof coverage.
+- Build panel must expose these first structure toggles.
