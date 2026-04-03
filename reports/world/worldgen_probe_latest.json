@@ -1,0 +1,13 @@
+{
+  "report": "worldgen_probe",
+  "status": "pass",
+  "layout": {
+    "layer_count": 3,
+    "block_count": 27
+  },
+  "portal": {
+    "crack_plane_id": "crack_plane_alpha",
+    "timer_start_ticks": 10,
+    "timer_after_extension": 13
+  }
+}

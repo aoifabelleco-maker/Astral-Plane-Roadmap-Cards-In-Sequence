@@ -1,0 +1,7 @@
+Building Storage Law v1
+
+- Storage states are explicit: loose_pile, contained_container, stockpile_bulk, vault_reserved.
+- Stored quantity truth is separate from in-place structural truth.
+- Storage queries must report state, quantity, and reservation intent.
+- Transport state changes access, leakage risk, spoilage risk, and placement readiness.
+- Liquid and solid transport truth are distinct.
