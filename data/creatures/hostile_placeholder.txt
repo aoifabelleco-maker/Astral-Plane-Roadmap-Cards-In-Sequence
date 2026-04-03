@@ -1,6 +1,0 @@
-Hostile creature placeholder v1
-
-- feral_shade
-  hp: 20
-  melee_damage: 6
-  aggression: immediate

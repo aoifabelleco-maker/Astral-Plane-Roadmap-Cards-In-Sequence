@@ -1,4 +1,0 @@
-Item tools placeholder v1
-
-- bronze_pickaxe: enables mine verb on one block.
-- canvas_sling: increases practical carrying control (placeholder).
