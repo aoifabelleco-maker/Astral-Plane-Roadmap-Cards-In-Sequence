@@ -1,0 +1,9 @@
+Astral Plane Terrain Microblock Decomposition v1
+
+- Internal decomposition uses 27 microblocks per block (3x3x3).
+- 1 microblock = 1 measure.
+- full_block => measures = 27
+- loose_matter => measures = 1..26
+- assimilated_matter => measures = 1..27
+- contained_matter => measures = 1..27 (container-bounded)
+- free cell => measures = 0
