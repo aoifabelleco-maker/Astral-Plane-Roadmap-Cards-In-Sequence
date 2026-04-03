@@ -1,0 +1,14 @@
+Core Assimilation Law v1
+
+- Returned foreign matter auto-routes through home core on successful return.
+- Assimilation converts feed-approved matter into owned plane growth substrate.
+- Assimilated matter is no longer ordinary loose economy matter.
+- Reserved matter remains intentionally withheld for future planned use.
+
+Matter-state boundary:
+- loose_matter: tradable/buildable economy matter.
+- reserved_matter: intentionally withheld stock.
+- feed_eligible_matter: candidate input for core feed routing.
+- in_process_feed: matter currently in assimilation pipeline.
+- assimilated_matter: surrendered to realm growth.
+- rejected_or_diverted_residue: non-assimilated output.
