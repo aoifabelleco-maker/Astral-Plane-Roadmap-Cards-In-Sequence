@@ -1,5 +1,0 @@
-Building Bed and Rest Law v1
-
-- A bed/rest point can be placed in enclosed space.
-- Rest point is a first survivability utility marker.
-- Cultivation/training spots are placeholders in this stage.
