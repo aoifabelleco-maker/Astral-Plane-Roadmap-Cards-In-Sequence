@@ -1,0 +1,9 @@
+Astral Plane Derived Stats v1
+
+- carry_capacity_kg
+- encumbrance_ratio
+- stamina_max
+- stamina_drain_per_tick
+- collapse_risk
+- vision_radius_tiles
+- awareness_radius_tiles
