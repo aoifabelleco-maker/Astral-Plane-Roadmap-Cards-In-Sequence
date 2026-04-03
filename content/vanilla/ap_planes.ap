@@ -1,8 +1,0 @@
-BEGIN
-kind=plane
-id=plane.astral_seed
-name=Astral Seed
-terrain_id=terrain.plains
-core_id=core.bootstrap
-stat_id=stat.hp
-END

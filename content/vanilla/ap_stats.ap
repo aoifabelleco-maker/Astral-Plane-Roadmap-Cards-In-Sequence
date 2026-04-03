@@ -1,5 +1,0 @@
-BEGIN
-kind=stat
-id=stat.hp
-name=Health
-END

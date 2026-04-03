@@ -1,5 +1,0 @@
-BEGIN
-kind=lua_placeholder
-id=lua.bootstrap
-script=lua/bootstrap.lua
-END

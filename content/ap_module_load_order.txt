@@ -1,7 +1,0 @@
-content/init/ap_core.ap
-content/vanilla/ap_materials.ap
-content/vanilla/ap_terrain.ap
-content/vanilla/ap_stats.ap
-content/vanilla/ap_planes.ap
-content/vanilla/ap_graphics.ap
-content/init/ap_lua.ap
