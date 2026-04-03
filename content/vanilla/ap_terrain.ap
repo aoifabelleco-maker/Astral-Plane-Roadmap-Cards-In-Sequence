@@ -1,0 +1,13 @@
+BEGIN
+kind=terrain
+id=terrain.plains
+name=Plains
+material_id=mat.grass
+END
+
+BEGIN
+kind=terrain
+id=terrain.crag
+name=Crag
+material_id=mat.stone
+END

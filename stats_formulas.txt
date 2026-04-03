@@ -1,0 +1,14 @@
+Astral Plane Stat Formula Law v1
+
+- carry_capacity_kg = 20 + STR * 5
+- vision_radius_tiles = 3 + floor(PER / 2)
+- awareness_radius_tiles = 2 + floor(PER / 3)
+- stamina_max = baseline_stamina + END * 4
+- stamina_drain_per_tick = max(1, 6 - floor(END / 3)) + encumbrance_penalty
+- encumbrance_ratio = carried_mass_kg / carry_capacity_kg
+- encumbrance_penalty =
+  0 when ratio <= 1.0
+  1 when ratio > 1.0 and <= 1.25
+  2 when ratio > 1.25 and <= 1.5
+  3 when ratio > 1.5
+- collapse_risk = true when current_stamina <= collapse_threshold_stamina or ratio > 1.5

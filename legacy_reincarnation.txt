@@ -1,0 +1,5 @@
+LEGACY REINCARNATION RULES (bootstrap)
+
+1) Next life starts from persisted world state, not fresh worldgen.
+2) Reincarnation index increments on ironman death.
+3) Reincarnation flow may consume memory fragments and ancestral placeholder state.
